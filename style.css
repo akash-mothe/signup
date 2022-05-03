@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 219, 110);
+}
+
+.circle{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: rgba(102, 115, 238, 0.678);
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
+/* .circle2{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: rgba(102, 115, 238, 0.678);
+    position: absolute;
+    bottom: 2%;
+    right: 10%;
+} */
+
+.main_outer_box{
+    width: 70%;
+    height: 75%;
+    background: rgba(0, 219, 10, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+}
+
+.main_outer_box .left-box{
+    position: relative;
+    width: 35%;
+    height: 100%;
+}
+.main_outer_box .left-box img{
+    position: absolute;
+    top: 22%;
+    right: -17%;
+    height: 75%;
+}
+
+.main_outer_box .right-box{
+    padding: 2rem;
+    width: 65%;
+    height: 100%;
+    background-color: rgba(238, 238, 238, 0.877);
+    border-radius: 16px;
+}
+.main_outer_box .right-box h1{
+    margin-top: 3rem;
+    padding-left: 10%;
+}
+.right-box .social-row{
+    margin-top: 2rem;
+    padding-left: 3em;
+    display: flex;
+}
+.right-box .social-row .social-btns{
+    margin: 0 2rem;
+    padding: 0.3em 3em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.6rem;
+    /* box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.712), inset -2px -2px 3px rgba(255, 255, 255, 0.788); */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.295);
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+.right-box .social-row .social-btns:hover{
+    box-shadow: none;
+}
+.social-row .social-btns img{
+    margin-right: 1rem;
+    width: 2.5rem;
+}
+.right-box h2{
+    margin-top: 2rem;
+    text-align: center;
+    color: rgba(61, 61, 61, 0.74);
+}
+.right-box form{
+    margin-top: 2rem;
+    padding: 0 5rem;
+}
+.right-box form .form-row{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.right-box form .form-row label{
+    font-size: 1.6rem;
+}
+.right-box form .form-row input{
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.541);
+}
+.right-box form .form-row .signup-btn{
+    margin-top: 3rem;
+    padding: 0.5em 0;
+    background-color: rgb(0, 177, 88);
+    border: none;
+    outline: none;
+    border-radius: 0.8rem;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.295);
+    font-size: 1.7rem;
+    transition-duration: .5s;
+}
+.right-box form .form-row .signup-btn:hover{
+    letter-spacing: 0.2rem;
+}
